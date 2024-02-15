@@ -1,0 +1,1 @@
+Show user how could he get an input number by applying next operations to 1: adding a 5 or multiplying by 3.
