@@ -12,7 +12,9 @@ function showOperations(number) {
     let order = '';
     let operationsCount = 0;
     function showOperationsOrder(number){
-        if (number % 3 == 0 && number !== 6) {
+        if (number % 3 == 0 && number !== 6) { 
+            // шістку слід розглядати як (1+5), але так як шість ділиться на три 
+            // без залишку, то програма перш за все виконує 6/3, що призводить до небажаного результату.
             order += ')3*';
             operationsCount += 1;
             return showOperationsOrder(number / 3);
